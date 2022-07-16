@@ -1,0 +1,38 @@
+
+var ftGUID_6415463="5212B748564CF9";
+var ftConfID_6415463="0";
+var ftParams_6415463="ftx=&fty=&ftadz=&ftscw=&ft_custom=&ftOBA=1&ft_ifb=1&ft_domain=www.allrecipes.com&ft_agentEnv=0&ft_lat=41.84885025024414&ft_long=-87.67124938964844&ft_referrer=https%3A%2F%2Fwww.allrecipes.com%2Fgallery%2Fcottagecore-recipes-for-peak-winter-coziness%2F%3Fslide%3D281d32ce-39d5-42a0-8328-d84aa4282c6c&gdpr=0&gdpr_consent=&us_privacy=&cachebuster=697990.1761926102";
+var ftKeyword_6415463="";
+var ftCustom_6415463="";
+var ftSection_6415463="";
+var ftSegment_6415463="aiia,aixd,ajb9,aixo,ajh6,xl25,ajli,ajlj";
+var ftSegmentList_6415463=[{s:'aiia'},{s:'aixd'},{s:'ajb9'},{s:'aixo',t:53101643},{s:'ajh6'},{s:'xl25'},{s:'ajli',t:53610000},{s:'ajlj',t:53610000}];
+var ftRuleMatch_6415463="0";
+var ftTimestamp_6415463="1664144698";
+var ftGeoC2_6415463="us";
+var ftGeoState_6415463="ut";
+var ftGeoCity_6415463="salt lake city";
+var ftISP_6415463="comcast cable communications inc.";
+var ftSpeed_6415463="cable";
+var ftDMA_6415463="770";
+var ftLong_6415463="-87.67";
+var ftLat_6415463="41.85";
+var ftPostal_6415463="84103";
+var ftTimeZone_6415463="-600";
+var ftMobileCarrier_6415463="";
+var ftImp6415463 = {};
+ftImp6415463.privacy = "x";
+ftImp6415463.guidAge = "169";
+ftImp6415463.impID = "5E6C093C-EEFB-C7F1-7984-FD338FB74FBD";
+ftImp6415463.duid = "FT:5212B748564CF9";
+
+ftImp6415463.ft_tpplid = "";
+ftImp6415463.ft_c = {};
+ftImp6415463.gdpr = "0";
+ftImp6415463.gdpr_consent = "";
+ftImp6415463.gdpr_pd = "";
+ftImp6415463.oob_consent = "";
+ftImp6415463.gdprStoredConsent = "";
+ftImp6415463.us_privacy = "";
+
+document.write('<scr'+'ipt src="https://cdn.flashtalking.com/xre/641/6415463/3547108/js/j-6415463-3547108.js" id="ftscript_m6415463" name="ftscript_m6415463"></scr'+'ipt>');

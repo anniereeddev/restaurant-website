@@ -1,0 +1,320 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Clear fix hack */
+  .clearfix:after {
+       content: ".";
+       display: block;
+       clear: both;
+       visibility: hidden;
+       line-height: 0;
+       height: 0;
+  }
+  
+  .clear {
+      clear: both;
+  }
+  
+  /******************************************
+  /* BASE STYLES
+  /*******************************************/
+  
+  body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #285857;
+      
+  }
+
+  body,html{
+      height:100%;
+  }
+  .box{
+    background-image: url("../../images/cottagecore10.jpg");
+    /* background: red; */
+    height: 51em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+   .aboutUsBackground{
+    /* background:red */
+    background-image: url("../../images/cottagecore9.jpg");
+    height: 51em%;
+    /* background-position: center; */ */
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+
+   .menuBackground{
+    background-image: url("../../images/cottagecore3.jpg");
+    height: 50em;
+    /* background-position: cover; */
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+   }
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+  /******************************************
+  /* GRID
+  /*******************************************/
+
+  .container {
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 0px;
+    width: 960px;
+  }
+
+  .about{
+    padding: 5em 10em 10em 43em;
+    width: 90em;
+    color:white;
+  }
+
+  .aboutWords{
+    background:black;
+    opacity:0.7;
+    padding: 2em 1em 2em 2em;
+    width:45em;
+  }
+
+  .menu{
+    padding: 3em 0 10em 0;
+    color: black;
+  }
+
+  header,nav,a,img,form,section,h1,button,input,ol,li{
+      outline:thin dotted;
+  }
+
+  .coffee {
+    display: inline-block;
+    padding: .5em 1em;
+    outline:black;
+    /* color:white; */
+    /* font-size: 14px;
+    font-weight: 400; */
+    text-align:center;
+    /* background-color:black; */
+    /* opacity:1; */
+}
+
+  /* .coffee a::after {
+    display: inline-block;
+    font-size: 80%;
+    font-weight: bold;
+} */
+
+   /* Parent Container */
+
+  .drinks {
+    /* display: inline-block; */
+    /* text-align:center; */
+    padding:1em 3em 6em 3em;
+    margin: 0em 1em;
+    width:13.5em;
+    height:15em;
+    position:relative;
+    float:left;
+  }
+/* TO-DO: */
+/* FIgure out the hover function for this page. see: https://makitweb.com/html-how-to-show-text-above-image-on-hover/ */
+
+  /* li:hover{color:white;
+    transition: all ease-in-out 250ms;
+    text-decoration: underline;
+    text-decoration: none;
+    background: #000000AA;
+    opacity: 0.8;
+
+} */
+
+   
+   /* .brew{
+    background-image:url("../../images/espresso.jpg");
+    background-size: cover;
+   }
+   .espresso{
+    background-image:url("../../images/espresso9.jpg");
+    background-size: cover;
+   }
+   .chocolate{
+    background-image:url("../../images/hot-chocolate.jpg");
+    background-size:cover;
+   }
+   .matcha{
+    background-image:url("../../images/matcha.jpg");
+    background-size:cover;
+   } */
+  .category {
+    padding: 0 10em;
+  }
+
+  /*
+	=================================
+	Typography
+	=================================
+  */
+
+  html{
+      font-size:62.5%;
+  }
+  h1, h2, h4, p{
+    margin-bottom: 22px;
+  }
+
+  h1, h2{
+    font: 600 10rem/8rem "Leckerli One", "Open Sans", "Helvetica Neue", Helvetiva, Arial, sans-serif;
+
+}
+
+ body{
+    font: 600 15px/20px "Montserrat", "Open Sans", "Helvetica Neue", Helvetiva, Arial, sans-serif;
+    color:#1a392e  ;
+ }
+
+  .about h2{
+    font: 400
+  }
+/*
+  ========================================
+  Search
+  ========================================
+*/
+  .searchBar{
+      width:330px;
+      height:40px;
+      padding:0 0 0 10px;
+      border-radius: 5px 0 0 5px;
+}
+
+/*
+  ========================================
+  Buttons
+  ========================================
+*/
+  .btn {
+    border-radius: 0 5px 5px 0;
+    display: inline-block;
+    margin: 0;
+    border:none;
+  }
+
+  .btn-alt{
+      height:40px;
+      padding:0 25px;
+      font-weight:bold;
+      color:white;
+      background-color:#234d3e;
+  }
+
+  .btn-about{
+    border-radius: 5px;
+  }
+
+  /******************************************
+  /* NAV BAR
+  /*******************************************/
+
+  .nav{
+      /* display:inline-block; */
+      text-align:right;
+      background-color:black;
+      opacity:0.7;
+  }
+
+  .nav ol{
+      list-style-type: none;
+      padding-left: 0;
+      overflow:auto;
+      display:inline-block;
+      letter-spacing: 0.5px;
+      /* float:left; */
+      /* font-size:smaller; */
+  }
+
+  .crumb {
+    display: inline-block;
+    padding: 15px 25px 5px 20px;
+    color:white;
+    font-size: 14px;
+    font-weight: 400;
+    /* background-color:black; */
+    opacity:1;
+}
+
+.crumb a::after {
+    display: inline-block;
+    font-size: 80%;
+    font-weight: bold;
+}
+
+  
+  .cart{
+      /* max-width: 100%;  */
+      width: 3em;
+      height: auto;
+      margin: 10px 10px;
+      float:right;
+      /* vertical-align: top; */
+  }
+
+  .glass{
+      height:auto;
+      width:30px;
+      float:right;
+      margin: 10px 75px 10px 10px;
+  }
+
+
+  a:link {
+    color: white;
+    border-bottom:none;
+  }
+  
+  a:visited {
+    color: white;
+  }
+  
+  a:focus {
+    border-bottom: 1px solid;
+  }
+  
+  a:hover {
+    border-bottom: 1px solid;
+    color:darkgreen;
+  }
+  
+  a:active {
+    color: darkgreen;
+  }
+  /*
+	==================================
+	Home
+	==================================
+    */
+
+    .hero {
+        line-height: 44px;
+        padding: 9em 80px 80px 7em;
+        margin: 0;
+    }
