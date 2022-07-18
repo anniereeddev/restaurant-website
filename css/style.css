@@ -126,17 +126,29 @@
 
    /* Parent Container */
 
-  .drinks {
+   .drinks-container {
+    height:16em;
+    padding: 0em;
+    display:none;
+   }
+   .drinks {
     /* display: inline-block; */
     /* text-align:center; */
-    padding:1em 3em 6em 3em;
-    margin: 0em 1em;
-    width:13.5em;
+    /* padding:1em 3em 6em 3em;
+    margin: 0em 1em;*/
     height:15em;
     position:relative;
     float:left;
   }
-/* TO-DO: */
+
+  .drinks img {
+    /* width: 13.5em; */
+    height: 100%;
+    width:15em;
+    margin: 0.5em;
+      }
+
+/* TODO: */
 /* FIgure out the hover function for this page. see: https://makitweb.com/html-how-to-show-text-above-image-on-hover/ */
 
   /* li:hover{color:white;
@@ -182,10 +194,13 @@
     margin-bottom: 22px;
   }
 
-  h1, h2{
+  h1 {
     font: 600 10rem/8rem "Leckerli One", "Open Sans", "Helvetica Neue", Helvetiva, Arial, sans-serif;
-
 }
+  
+  h2 {
+    font: 600 6em/4rem "Leckerli One", "Open Sans", "Helvetica Neue", Helvetiva, Arial, sans-serif;
+  }
 
  body{
     font: 600 15px/20px "Montserrat", "Open Sans", "Helvetica Neue", Helvetiva, Arial, sans-serif;
