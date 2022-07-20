@@ -30,8 +30,8 @@
   body,html{
       height:100%;
   }
-  .box{
-    background-image: url("../../images/cottagecore10.jpg");
+  .box {
+    background-image:url("../images/cottagecore10.jpg");
     /* background: red; */
     height: 51em;
     background-position: center;
@@ -41,7 +41,7 @@
 
    .aboutUsBackground{
     /* background:red */
-    background-image: url("../../images/cottagecore9.jpg");
+    background-image: url("../images/cottagecore9.jpg");
     height: 51em%;
     /* background-position: center; */ */
     background-repeat: no-repeat;
@@ -49,7 +49,7 @@
    }
 
    .menuBackground{
-    background-image: url("../../images/cottagecore3.jpg");
+    background-image: url("../images/cottagecore3.jpg");
     height: 50em;
     /* background-position: cover; */
     /* background-repeat: no-repeat; */
@@ -129,54 +129,67 @@
    .drinks-container {
     height:16em;
     padding: 0em;
-    display:none;
+    display:flex;
+    text-align:center;
+    justify-content:space-between;
    }
+
+   
    .drinks {
     /* display: inline-block; */
     /* text-align:center; */
-    /* padding:1em 3em 6em 3em;
-    margin: 0em 1em;*/
+    /* padding:1em 3em 6em 3em;*/
+    margin: 0em 1em; 
     height:15em;
     position:relative;
     float:left;
+    text-align:center;
+    width:100%;
+  
   }
 
+    .dailyBrew {
+      background-image: url("../images/espresso.jpg");
+      width:100%;
+      background-size:cover;
+    }
+
+    .espresso {
+      background-image: url("../images/espresso9.jpg");
+      background-size:cover;
+    }
+
+    .chocolate{
+      background-image: url("../images/hot-chocolate.jpg");
+      background-size:cover;
+    }
+
+    .matcha{
+      background-image: url("../images/matcha.jpg");
+      background-size:cover;
+
+    }
+/* 
   .drinks img {
     /* width: 13.5em; */
     height: 100%;
     width:15em;
     margin: 0.5em;
-      }
+      } */
 
 /* TODO: */
 /* FIgure out the hover function for this page. see: https://makitweb.com/html-how-to-show-text-above-image-on-hover/ */
 
-  /* li:hover{color:white;
+  li:hover{color:white;
     transition: all ease-in-out 250ms;
     text-decoration: underline;
     text-decoration: none;
     background: #000000AA;
     opacity: 0.8;
 
-} */
+}
 
-   
-   /* .brew{
-    background-image:url("../../images/espresso.jpg");
-    background-size: cover;
-   }
-   .espresso{
-    background-image:url("../../images/espresso9.jpg");
-    background-size: cover;
-   }
-   .chocolate{
-    background-image:url("../../images/hot-chocolate.jpg");
-    background-size:cover;
-   }
-   .matcha{
-    background-image:url("../../images/matcha.jpg");
-    background-size:cover;
-   } */
+
   .category {
     padding: 0 10em;
   }
@@ -192,6 +205,11 @@
   }
   h1, h2, h4, p{
     margin-bottom: 22px;
+    padding: .2em 0 .5em 0;
+  }
+  
+  h3 {
+    font: 200 4rem/2rem "Leckerli One", "Open Sans", "Helvetica Neue", Helvetiva, Arial, sans-serif;
   }
 
   h1 {
@@ -200,6 +218,7 @@
   
   h2 {
     font: 600 6em/4rem "Leckerli One", "Open Sans", "Helvetica Neue", Helvetiva, Arial, sans-serif;
+    text-align:center;
   }
 
  body{
@@ -209,6 +228,15 @@
 
   .about h2{
     font: 400
+  }
+
+  .aboutWords h2{
+    padding:5px;
+  }
+
+  h4 {
+    text-align:center;
+    color:#6a6756;
   }
 /*
   ========================================
