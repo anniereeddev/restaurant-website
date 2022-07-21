@@ -134,20 +134,88 @@
     justify-content:space-between;
    }
 
-   
-   .drinks {
-    /* display: inline-block; */
-    /* text-align:center; */
-    /* padding:1em 3em 6em 3em;*/
-    margin: 0em 1em; 
-    height:15em;
-    position:relative;
+    .img_wrap {
+      position:relative;
+      display:inline-block;
+      width:200px;
+      height:200px;
+      margin-right:10px;
+    }
+
+     .img_img {
+      vertical-align:bottom;
+     }
+
+      .img_description_layer{
+        position:absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        background:black;
+        visibility:hidden;
+        opacity:0;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+       /* transition effect */
+        transition:opacity .2s, visibility .2s;
+      }
+
+      .img_wrap:hover .img_description_layer{
+        visibility:visible;
+        opacity:.7;
+      }
+
+      .img_description {
+        transition: .2s;
+        transform: translateY(1em);
+        text-align:center;
+        color:white;
+      }
+
+       .img_wrap:hover .img_description{
+        transform: translateY(0);
+       }
+      
+   /* Parent Container */
+   /* .drinks {
     float:left;
     text-align:center;
-    width:100%;
-  
-  }
+    width:200px;
+    height:200px;
+    margin-right:10px;
+    position:relative;
+    
+  } */
 
+   /* Child Text Contianer */
+    /* .drinks div{
+      position:absolute;
+      justify-content:center;
+      width:200px;
+      height:200px;
+      background:black;
+      color:white;
+      margin-bottom:5px;
+      font-family:sans-serif;
+      opacity:0;
+      visibility:hidden;
+      -webkit-transition:visibility 0s, opacity 0.5s linear;
+      transition:visibility 0s, opacity 0.5s linear;
+    } */
+
+    /* Hover on Parent Container */
+     /* .drinks:hover{
+      cursor:pointer;
+     }
+
+     .drinks:hover div{
+      padding: 8px 15px;
+      visibility:visible;
+      opacity:0.7;
+     }  */
+/* 
     .dailyBrew {
       background-image: url("../images/espresso.jpg");
       width:100%;
@@ -168,7 +236,7 @@
       background-image: url("../images/matcha.jpg");
       background-size:cover;
 
-    }
+    } */
 /* 
   .drinks img {
     /* width: 13.5em; */
