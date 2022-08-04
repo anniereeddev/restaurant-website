@@ -110,153 +110,18 @@
     display: inline-block;
     padding: .5em 1em;
     outline:black;
-    /* color:white; */
-    /* font-size: 14px;
-    font-weight: 400; */
     text-align:center;
-    /* background-color:black; */
-    /* opacity:1; */
 }
-
-  /* .coffee a::after {
-    display: inline-block;
-    font-size: 80%;
-    font-weight: bold;
-} */
-
-   /* Parent Container */
 
    .drinks-container {
-    height:16em;
-    padding: 0em;
+    height:18em;
+    padding: 2em 16em;
     display:flex;
     text-align:center;
-    justify-content:space-between;
+    justify-content:space-evenly;
    }
 
-    .img_wrap {
-      position:relative;
-      display:inline-block;
-      width:200px;
-      height:200px;
-      margin-right:10px;
-    }
-
-     .img_img {
-      vertical-align:bottom;
-     }
-
-      .img_description_layer{
-        position:absolute;
-        top:0;
-        bottom:0;
-        left:0;
-        right:0;
-        background:black;
-        visibility:hidden;
-        opacity:0;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-       /* transition effect */
-        transition:opacity .2s, visibility .2s;
-      }
-
-      .img_wrap:hover .img_description_layer{
-        visibility:visible;
-        opacity:.7;
-      }
-
-      .img_description {
-        transition: .2s;
-        transform: translateY(1em);
-        text-align:center;
-        color:white;
-      }
-
-       .img_wrap:hover .img_description{
-        transform: translateY(0);
-       }
-      
-   /* Parent Container */
-   /* .drinks {
-    float:left;
-    text-align:center;
-    width:200px;
-    height:200px;
-    margin-right:10px;
-    position:relative;
     
-  } */
-
-   /* Child Text Contianer */
-    /* .drinks div{
-      position:absolute;
-      justify-content:center;
-      width:200px;
-      height:200px;
-      background:black;
-      color:white;
-      margin-bottom:5px;
-      font-family:sans-serif;
-      opacity:0;
-      visibility:hidden;
-      -webkit-transition:visibility 0s, opacity 0.5s linear;
-      transition:visibility 0s, opacity 0.5s linear;
-    } */
-
-    /* Hover on Parent Container */
-     /* .drinks:hover{
-      cursor:pointer;
-     }
-
-     .drinks:hover div{
-      padding: 8px 15px;
-      visibility:visible;
-      opacity:0.7;
-     }  */
-/* 
-    .dailyBrew {
-      background-image: url("../images/espresso.jpg");
-      width:100%;
-      background-size:cover;
-    }
-
-    .espresso {
-      background-image: url("../images/espresso9.jpg");
-      background-size:cover;
-    }
-
-    .chocolate{
-      background-image: url("../images/hot-chocolate.jpg");
-      background-size:cover;
-    }
-
-    .matcha{
-      background-image: url("../images/matcha.jpg");
-      background-size:cover;
-
-    } */
-/* 
-  .drinks img {
-    /* width: 13.5em; */
-    height: 100%;
-    width:15em;
-    margin: 0.5em;
-      } */
-
-/* TODO: */
-/* FIgure out the hover function for this page. see: https://makitweb.com/html-how-to-show-text-above-image-on-hover/ */
-
-  li:hover{color:white;
-    transition: all ease-in-out 250ms;
-    text-decoration: underline;
-    text-decoration: none;
-    background: #000000AA;
-    opacity: 0.8;
-
-}
-
 
   .category {
     padding: 0 10em;
@@ -325,6 +190,8 @@
     color:#f5ad35;
     font-size:1.35em;
   }
+
+ 
 /*
   ========================================
   Search
@@ -337,30 +204,115 @@
       border-radius: 5px 0 0 5px;
 }
 
+
+/*
+  ========================================
+  Images and Hover
+  ========================================
+*/
+
+  .img_wrap {
+    position:relative;
+    /* display:inline-block; */
+    width:18em;
+    height:18em;
+    margin:0;
+  }
+
+    .img_description_layer{
+      position:absolute;
+      top:0;
+      bottom:0;
+      left:0;
+      right:0;
+      background:black;
+      visibility:hidden;
+      opacity:0;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      flex-direction:column;
+     /* transition effect */
+      transition:opacity .2s, visibility .2s;
+    }
+
+    .img_wrap:hover .img_description_layer{
+      visibility:visible;
+      opacity:.7;
+    }
+
+    .img_description {
+      transition: .2s;
+      transform: translateY(1em);
+      flex-direction: column;
+      /* text-align:center; */
+      
+      color:white;
+      margin: .1em;
+      font-size:140%;
+    }
+
+     .img_wrap:hover .img_description{
+      transform: translateY(0);
+     }
+    
+
+.drinks img {
+  /* width: 13.5em; */
+  height: 100%;
+  width:15em;
+  margin: 0.5em;
+    } */
+
+/* TODO: */
+/* Got hover from https://makitweb.com/html-how-to-show-text-above-image-on-hover/ */
+
+li:hover{color:white;
+  transition: all ease-in-out 250ms;
+  text-decoration: underline;
+  text-decoration: none;
+  background: #000000AA;
+  opacity: 0.8;
+
+}
+
 /*
   ========================================
   Buttons
   ========================================
 */
-  .btn {
-    border-radius: 0 5px 5px 0;
-    display: inline-block;
-    margin: 0;
-    border:none;
-  }
+.btn {
+  border-radius: 0 5px 5px 0;
+  display: inline-block;
+  margin: 0;
+  border:none;
+}
 
-  .btn-alt{
-      height:50px;
-      padding:0 25px;
-      font-weight:bold;
-      font-size:110%;
-      color:white;
-      background-color:#234d3e;
-  }
+.btn-alt{
+    height:50px;
+    padding:0 25px;
+    font-weight:bold;
+    font-size:110%;
+    color:white;
+    background-color:#234d3e;
+}
 
-  .btn-about{
-    border-radius: 5px;
-  }
+.btn-about{
+  border-radius: 5px;
+}
+
+.menuBtn{
+  color:black;
+  border-radius:5px;
+  font-size:120%;
+  font-weight:600;
+  background-color:#f5ad35;
+}
+
+.price {
+  font-size:170%;
+  padding:0;
+}
 
   /******************************************
   /* NAV BAR

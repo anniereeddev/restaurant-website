@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../Coding-Challenges"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "class10-materials"
+	}
+}
