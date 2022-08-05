@@ -42,17 +42,12 @@
    .aboutUsBackground{
     /* background:red */
     background-image: url("../images/cottagecore9.jpg");
-    height: 100%;
-    /* background-position: center; */ */
     background-repeat: no-repeat;
     background-size: cover;
    }
 
    .menuBackground{
     background-image: url("../images/cottagecore3.jpg");
-    height: 100%;
-    /* background-position: cover; */
-    /* background-repeat: no-repeat; */
     background-size: cover;
    }
 /*
@@ -73,6 +68,95 @@
   clear: both;
   *zoom: 1;
 }
+
+/******************************************
+  /* NAV BAR
+  /*******************************************/
+
+  .nav{
+    /* display:inline-block; */
+    text-align:right;
+    background-color:black;
+    opacity:0.7;
+}
+
+.nav ol{
+    list-style-type: none;
+    padding-left: 0;
+    overflow:auto;
+    display:inline-block;
+    letter-spacing: 0.5px;
+    /* float:left; */
+    /* font-size:smaller; */
+}
+
+.crumb {
+  display: inline-block;
+  padding: 15px 25px 5px 20px;
+  color:white;
+  font-size: 14px;
+  font-weight: 400;
+  /* background-color:black; */
+  opacity:1;
+}
+
+.crumb a::after {
+  display: inline-block;
+  font-size: 80%;
+  font-weight: bold;
+}
+
+
+.cart{
+    /* max-width: 100%;  */
+    width: 3em;
+    height: auto;
+    margin: 10px 10px;
+    float:right;
+    /* vertical-align: top; */
+}
+
+.glass{
+    height:auto;
+    width:30px;
+    float:right;
+    margin: 10px 75px 10px 10px;
+}
+
+
+a:link {
+  color: white;
+  border-bottom:none;
+}
+
+a:visited {
+  color: white;
+}
+
+a:focus {
+  border-bottom: 1px solid;
+}
+
+a:hover {
+  border-bottom: 1px solid;
+  color:darkgreen;
+}
+
+a:active {
+  color: darkgreen;
+}
+/*
+==================================
+Home
+==================================
+  */
+
+  .hero {
+      line-height: 44px;
+      padding: 9em 80px 80px 7em;
+      margin: 0 0 0 .3em;
+  }
+  
   /******************************************
   /* GRID
   /*******************************************/
@@ -106,6 +190,10 @@
       outline:thin dotted;
   }
 
+  .menu ul {
+    text-align:center;
+  }
+
   .coffee {
     display: inline-block;
     padding: .5em 1em;
@@ -114,11 +202,11 @@
 }
 
    .drinks-container {
-    height:18em;
-    padding: 2em 16em;
+    padding: 1.5em 16em;
     display:flex;
     text-align:center;
-    justify-content:space-evenly;
+    justify-content:space-around;
+    flex-wrap:wrap;
    }
 
     
@@ -163,7 +251,6 @@
     padding:0;
     margin:0;
     line-height: normal;
-    margin: 0 0 .3em 0;
   }
 
   .about h2{
@@ -191,6 +278,14 @@
     font-size:1.35em;
   }
 
+  .menu h4 {
+    text-align:center;
+  }
+
+  .menu h2{
+    text-align:center;
+    padding: .4em 0 .8em 0;
+  }
  
 /*
   ========================================
@@ -213,10 +308,9 @@
 
   .img_wrap {
     position:relative;
-    /* display:inline-block; */
     width:18em;
-    height:18em;
-    margin:0;
+    height:20em;
+    /* margin: .7em 0; */
   }
 
     .img_description_layer{
@@ -245,8 +339,6 @@
       transition: .2s;
       transform: translateY(1em);
       flex-direction: column;
-      /* text-align:center; */
-      
       color:white;
       margin: .1em;
       font-size:140%;
@@ -257,11 +349,8 @@
      }
     
 
-.drinks img {
-  /* width: 13.5em; */
-  height: 100%;
-  width:15em;
-  margin: 0.5em;
+    /* .img_img {
+      margin: .2em;
     } */
 
 /* TODO: */
@@ -314,90 +403,4 @@ li:hover{color:white;
   padding:0;
 }
 
-  /******************************************
-  /* NAV BAR
-  /*******************************************/
-
-  .nav{
-      /* display:inline-block; */
-      text-align:right;
-      background-color:black;
-      opacity:0.7;
-  }
-
-  .nav ol{
-      list-style-type: none;
-      padding-left: 0;
-      overflow:auto;
-      display:inline-block;
-      letter-spacing: 0.5px;
-      /* float:left; */
-      /* font-size:smaller; */
-  }
-
-  .crumb {
-    display: inline-block;
-    padding: 15px 25px 5px 20px;
-    color:white;
-    font-size: 14px;
-    font-weight: 400;
-    /* background-color:black; */
-    opacity:1;
-}
-
-.crumb a::after {
-    display: inline-block;
-    font-size: 80%;
-    font-weight: bold;
-}
-
   
-  .cart{
-      /* max-width: 100%;  */
-      width: 3em;
-      height: auto;
-      margin: 10px 10px;
-      float:right;
-      /* vertical-align: top; */
-  }
-
-  .glass{
-      height:auto;
-      width:30px;
-      float:right;
-      margin: 10px 75px 10px 10px;
-  }
-
-
-  a:link {
-    color: white;
-    border-bottom:none;
-  }
-  
-  a:visited {
-    color: white;
-  }
-  
-  a:focus {
-    border-bottom: 1px solid;
-  }
-  
-  a:hover {
-    border-bottom: 1px solid;
-    color:darkgreen;
-  }
-  
-  a:active {
-    color: darkgreen;
-  }
-  /*
-	==================================
-	Home
-	==================================
-    */
-
-    .hero {
-        line-height: 44px;
-        padding: 9em 80px 80px 7em;
-        margin: 0;
-    }
