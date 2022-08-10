@@ -306,34 +306,18 @@ Home
   */
 
   /* Slideshow container */
-  .slideshow-container {
+  /* .slideshow-container { */
     /* max-width: 1000px; */
-    position: relative;
-  }
+    /* position: relative; */
+  /* } */
 
   /* Hide the images by default */
-  .mySlides {
+  /* .mySlides {
     display: none;
-  }
-
-  /* Next & previous buttons */
-  .prev, .next .third {
-    cursor: pointer;
-    position: absolute;
-    transition: 0.6s ease;
-    user-select:none;
-  }
-
-  /* The dots/bullets/indicators */
-  .dot {
-    cursor: pointer;
-    background-color: #bbb;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
+  } */
 
   
-  Fading animation */
+  /* Fading animation */ 
   .fade {
     animation-name:slide;
     animation-duration: 3s;
