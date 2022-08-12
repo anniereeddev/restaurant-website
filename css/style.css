@@ -317,16 +317,28 @@ Home
   } */
 
   
-  /* Fading animation */ 
-  .fade {
-    animation-name:slide;
-    animation-duration: 3s;
-  }
+  /* Slide in animation */ 
 
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
+    .slideshow {
+      overflow:hidden;
+    }
+  
+    .mySlides {
+      animation-duration:.5s;
+      animation-name:slideIn;
+    }
+
+    @keyframes slideIn {
+      from {
+        margin-left: 100%;
+        width:300%;
+      }
+
+      to {
+        margin-left:0%;
+        width:100%;
+      }
+    }
 
   /*
   ========================================
