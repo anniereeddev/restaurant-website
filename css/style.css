@@ -393,8 +393,7 @@ Home
       margin: .2em;
     } */
 
-/* TODO: */
-/* Got hover from https://makitweb.com/html-how-to-show-text-above-image-on-hover/ */
+/* TODO: fix hover -- all pictures are appearing when website is clicked*/
 
 li:hover{color:white;
   transition: all ease-in-out 250ms;
