@@ -306,15 +306,15 @@ Home
   */
 
   /* Slideshow container */
-  /* .slideshow-container { */
-    /* max-width: 1000px; */
-    /* position: relative; */
-  /* } */
+  .slideshow-container { */
+    max-width: 1000px;
+    position: relative;
+  }
 
   /* Hide the images by default */
-  /* .mySlides {
-    display: none;
-  } */
+  .otherSlides {
+    display:none;
+  }
 
   
   /* Slide in animation */ 
@@ -388,13 +388,6 @@ Home
       transform: translateY(0);
      }
     
-
-    /* .img_img {
-      margin: .2em;
-    } */
-
-/* TODO: fix hover -- all pictures are appearing when website is clicked*/
-
 li:hover{color:white;
   transition: all ease-in-out 250ms;
   text-decoration: underline;
