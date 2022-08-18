@@ -282,12 +282,23 @@ Home
     text-align:center;
   }
 
-  .menu h2{
+  .menu h2 {
     text-align:center;
     padding: .4em 0 .8em 0;
   }
 
-  
+  .orderNow{
+    text-align: center;
+  }
+
+  /* .orderNow h4 {
+    text-align: center;
+  } */
+
+  .orderNow img {
+    height: 3em;
+    padding:.5em;
+  }
  
 /*
   ========================================
