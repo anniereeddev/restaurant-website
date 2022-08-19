@@ -30,26 +30,36 @@
   body,html{
       height:100%;
   }
-  .box {
-    background-image:url("../images/cottagecore10.jpg");
+  /* .box {
+    /* background-image:url("../images/cottagecore10.jpg"); */
     /* background: red; */
-    height: 100%;
+    /* height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-  }
+    background-attachment: fixed;
+  } */ 
 
-   .aboutUsBackground{
-    /* background:red */
+   .bg{
     background-image: url("../images/cottagecore9.jpg");
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    /* background-size: cover; */
+    position:fixed;
+    height:100vh;
+    width:100vw;
+    z-index:-1;
    }
 
-   .menuBackground{
-    background-image: url("../images/cottagecore3.jpg");
-    background-size: cover;
+   .content{
+    position:absolute;
+    /* margin-top:5rem;  */
+    left:50%;
+    transform:translateX(-50%);
+    width:90%;
    }
+
+   /* .bg and .content are an attempt at making the background stay while scrolling. Alternatively, we could set background-position to fixed, but this website says that's a bad idea because of mobile ui or something. so anyway, it kind of worked, it scrolls just fine now, but it also ruined my nav bar. so now I'm going to see if I can fix the nav bar, if not, we'll go with the "bad" option of background-position:fixed. also here's the url I copied from. you know, for posterity (aka future me) https://css-tricks.com/the-fixed-background-attachment-hack/ */
+
 /*
   ========================================
   Clearfix
@@ -151,23 +161,26 @@ Home
 ==================================
   */
 
-  .hero {
-      line-height: 44px;
-      padding: 9em 80px 80px 7em;
-      margin: 0 0 0 .3em;
-  }
-  
+    
   /******************************************
   /* GRID
   /*******************************************/
 
   .container {
     margin: 0 auto;
-    padding-left: 30px;
-    padding-right: 0px;
+    /* padding-left: 30px;
+    padding-right: 0px; */
     line-height:normal;
   }
 
+  .hero {
+    /* line-height: 44px; */
+    padding:.5em 0 2.5em 2em;
+    margin: 5em 0 5em .3em;
+    background:black;
+    opacity:0.7;
+    width:53em;
+}
   .about{
     padding: 5em 10em 10em 43em;
     width: 90em;
@@ -244,13 +257,14 @@ Home
 
  body{
     font: 600 15px/20px "Montserrat", "Open Sans", "Helvetica Neue", Helvetiva, Arial, sans-serif;
-    color:#1a392e  ;
+    /* color:#1a392e  ; */
  }
 
   .hero h1{
     padding:0;
     margin:0;
     line-height: normal;
+    color:white;
   }
 
   .about h2{
