@@ -19,7 +19,7 @@
     <div class="bg"></div>
     <div class="content">
         <script type="text/javascript" src="js/main.js"></script>
-        <div>
+        <div class="first">
             <header>
                 <nav class = 'nav'>
                         <ol>
@@ -32,8 +32,7 @@
                         </ol>
                         <img src='images\magnifyingGlass-nobg.png' alt='magnifyingGlass' class="glass">
                         <img src= 'images\cart_inverse-nobg.png' alt= 'cart' class = 'cart'> 
-                        
-                    </nav>
+                
                 </nav>
             </header>
             
@@ -76,16 +75,18 @@
         <div>
 
             <section class = 'container menu'>
-                <h4>Order Online Now</h4>
-                <h2>Our Specialty Cuisine</h2> <!--title-->
+                <div class="menuWords">
+                    <h4>Order Online Now</h4>
+                    <h2>Our Specialty Cuisine</h2> <!--title-->
 
-                <nav> <!-- top buttons -->
-                    <ul class="category">
-                        <li class="coffee" onclick="currentSlide(1)">Delicious Drinks</li>
-                        <li class="coffee" onclick="currentSlide(2)">Desserts and Pastries</li>
-                        <li class="coffee" onclick="currentSlide(3)">Savory Dishes</li>
-                    </ul>
-                </nav>
+                    <nav> <!-- top buttons -->
+                        <ul class="category">
+                            <li class="coffee" onclick="currentSlide(1)">Delicious Drinks</li>
+                            <li class="coffee" onclick="currentSlide(2)">Desserts and Pastries</li>
+                            <li class="coffee" onclick="currentSlide(3)">Savory Dishes</li>
+                        </ul>
+                    </nav>
+                </div>
 
                     <!-- Menu Items -->
                     <div class="slideshow"> <!-- div 1 overall container -->
@@ -424,6 +425,30 @@
                     </div> <!-- div 1 overall container -->
                     
             </section>
+        </div>
+
+        <div class="orderNow">
+            <section class = 'container orderNowWords'>
+                <h4>Book Now</h4>
+                <h2 class="title">Opening Hours</h2>
+                <img class="phone" src= "images/phone-icon-no-bg-yellow.png" alt= "bbc logo"> <!-- phone -->
+                <h5>Call Now</h5>
+                <h3>+12345 678 910</h3>
+    
+                <section class="hours">
+                    <div class="time">
+                        <span class="dayOfTheWeek">Monday through Friday</span>
+                        <span class="timeOfTheDay">11am - 3pm, 5pm -9pm</span>
+                    </div>
+    
+                    <div class="time">
+                        <span class="dayOfTheWeek">Saturday through Sunday</span>
+                        <span class="timeOfTheDay">12:00 PM through 9:30 PM</span>
+                    </div>
+                </section>
+                <!-- video -->
+            </section>
+            <img class="video" src="../restaurant-website/images/chocolate-crepes.jpg">
         </div>
     </div>
     

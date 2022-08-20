@@ -43,7 +43,7 @@
     background-image: url("../images/cottagecore9.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    /* background-size: cover; */
+    background-size: cover;
     position:fixed;
     height:100vh;
     width:100vw;
@@ -55,7 +55,7 @@
     /* margin-top:5rem;  */
     left:50%;
     transform:translateX(-50%);
-    width:90%;
+    width:100%;
    }
 
    /* .bg and .content are an attempt at making the background stay while scrolling. Alternatively, we could set background-position to fixed, but this website says that's a bad idea because of mobile ui or something. so anyway, it kind of worked, it scrolls just fine now, but it also ruined my nav bar. so now I'm going to see if I can fix the nav bar, if not, we'll go with the "bad" option of background-position:fixed. also here's the url I copied from. you know, for posterity (aka future me) https://css-tricks.com/the-fixed-background-attachment-hack/ */
@@ -85,9 +85,12 @@
 
   .nav{
     /* display:inline-block; */
+    position:sticky;
+    top:0;
     text-align:right;
     background-color:black;
     opacity:0.7;
+    
 }
 
 .nav ol{
@@ -173,10 +176,14 @@ Home
     line-height:normal;
   }
 
+   .first{
+    padding:0 0 16em 0;
+   }
+
   .hero {
     /* line-height: 44px; */
     padding:.5em 0 2.5em 2em;
-    margin: 5em 0 5em .3em;
+    margin: 13em 0 5em 9em;
     background:black;
     opacity:0.7;
     width:53em;
@@ -195,8 +202,18 @@ Home
   }
 
   .menu{
-    padding: 3em 0 10em 0;
+    padding: 3em 0 0 0;
+    margin: 4em 0 10em 0;
     color: black;
+  }
+
+  .menuWords {
+    background:black;
+    opacity:0.7;
+    color:white;
+    width:70em;
+    margin:0 0 0 30em;
+    padding: 2em 0 1.5em 0;
   }
 
   header,nav,a,img,form,section,h1,button,input,ol,li{
@@ -279,7 +296,6 @@ Home
     padding: 10px;
     margin:0 0 .3em 0;
     line-height:.9;
-  
   }
 
   .aboutWords p{
@@ -298,22 +314,77 @@ Home
 
   .menu h2 {
     text-align:center;
-    padding: .4em 0 .8em 0;
+    padding: .2em 0 .5em 0;
   }
 
   .orderNow{
     text-align: center;
   }
 
-  /* .orderNow h4 {
-    text-align: center;
-  } */
+  .orderNowWords{
+    background:black;
+    opacity:0.7;
+    width:85em;
+    padding:0 0 1em 0;
+  }
 
-  .orderNow img {
+  .orderNow h4{
+    text-align: center;
+    padding:1em 0 0 0;
+  }
+
+  .title {
+    padding:.4em 0 .5em 0;
+    margin:0;
+    color:white;
+  }
+
+  .phone {
     height: 3em;
-    padding:.5em;
+    padding:.2em 0.5em 0.5em 0.5em;
+  }
+
+  .orderNow h5 {
+    padding: .7em 0;
+    color:white;
+  }
+
+  .orderNow h3{
+    color:#ce880e;
+    padding: .4em 0;
+  }
+
+  .hours{
+    display:flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding:.2em 0 .2em 0;
+    color:white;
+  }
+
+  .time{
+    display:flex;
+    flex-direction:column;
+  }
+
+  .time span {
+    margin:.6em 0 .4em 0;
   }
  
+  .timeOfTheDay{
+    font-size: x-large;
+  }
+
+  .video{
+    margin:0;
+    padding:2em 0;
+    height:32em;
+  }
+
+  .testimonials{
+    text-align: center;
+  }
+
 /*
   ========================================
   Search
@@ -375,8 +446,8 @@ Home
 
   .img_wrap {
     position:relative;
-    width:18em;
-    height:20em;
+    width:17em;
+    height:18em;
     /* margin: .7em 0; */
   }
 
@@ -421,6 +492,7 @@ li:hover{color:white;
   text-decoration: none;
   background: #000000AA;
   opacity: 0.8;
+  color:#f5ad35;
 
 }
 
