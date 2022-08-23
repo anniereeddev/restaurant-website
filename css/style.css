@@ -245,6 +245,10 @@ Home
     padding: 0 10em;
   }
 
+  .category h3 {
+    font:inherit;
+  }
+
   /*
 	=================================
 	Typography
@@ -384,6 +388,37 @@ Home
   .testimonials{
     text-align: center;
   }
+
+  .topWords{
+    color:#ce880e;
+    text-align: center;
+    padding:2.5em 0 .3em 0;
+  }
+
+  .fiveStars {
+    width:7em;
+  }
+
+  .profile {
+    width:7em;
+    border-radius:4em;
+    margin:1em;
+  }
+
+  .testimonials h3{
+    font: 600 15px/20px "Montserrat", "Open Sans", "Helvetica Neue", Helvetiva, Arial, sans-serif;
+    font-size:.6cm;
+  }
+
+  .testimonials h4{
+    padding:.2em 0 .5em 60.6em;
+    font-size:.4cm;
+  }
+
+  .reviews {
+    
+  }
+  
 
 /*
   ========================================
