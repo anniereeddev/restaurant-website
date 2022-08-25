@@ -99,8 +99,6 @@
     overflow:auto;
     display:inline-block;
     letter-spacing: 0.5px;
-    /* float:left; */
-    /* font-size:smaller; */
 }
 
 .crumb {
@@ -109,7 +107,6 @@
   color:white;
   font-size: 14px;
   font-weight: 400;
-  /* background-color:black; */
   opacity:1;
 }
 
@@ -126,7 +123,6 @@
     height: auto;
     margin: 10px 10px;
     float:right;
-    /* vertical-align: top; */
 }
 
 .glass{
@@ -171,8 +167,6 @@ Home
 
   .container {
     margin: 0 auto;
-    /* padding-left: 30px;
-    padding-right: 0px; */
     line-height:normal;
   }
 
@@ -181,7 +175,6 @@ Home
    }
 
   .hero {
-    /* line-height: 44px; */
     padding:.5em 0 2.5em 2em;
     margin: 13em 0 5em 9em;
     background:black;
@@ -273,23 +266,21 @@ Home
   
   h2 {
     font: 600 6em/4rem "Leckerli One", "Open Sans", "Helvetica Neue", Helvetiva, Arial, sans-serif;
-    /* text-align:center; */
   }
 
  body{
     font: 600 15px/20px "Montserrat", "Open Sans", "Helvetica Neue", Helvetiva, Arial, sans-serif;
-    /* color:#1a392e  ; */
  }
 
   .hero h1{
     padding:0;
     margin:0;
-    line-height: normal;
+    line-height:normal;
     color:white;
   }
 
   .about h2{
-    font: 400
+    font:400;
   }
 
   .hero input{
@@ -434,7 +425,7 @@ Home
 
   /*
     ========================================
-    slideshow
+    slideshow 1
     ========================================
   */
 
@@ -472,6 +463,112 @@ Home
         width:100%;
       }
     }
+
+    /*
+    ========================================
+    slideshow 2
+    ========================================
+  */
+
+  /* Slideshow container */
+  .slideshow-container2 { 
+    max-width: 1000px;
+    position: relative;
+    margin:auto;
+  }
+
+  /* Hide the images by default */
+  .mySlides2 {
+    display:none;
+  }
+
+  /* next and previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+
+
+  /* Slide in animation */ 
+
+    .slideshow-2 {
+      overflow:hidden;
+    }
+  
+    .mySlides-2 {
+      animation-duration:.5s;
+      animation-name:slideIn;
+    }
+
+    @keyframes slideIn {
+      from {
+        margin-left: 100%;
+        width:300%;
+      }
+
+      to {
+        margin-left:0%;
+        width:100%;
+      }
+    }
+
 
   /*
   ========================================
